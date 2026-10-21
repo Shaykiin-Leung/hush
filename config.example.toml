@@ -1,0 +1,18 @@
+# Hush configuration — copy to hush.toml and adjust.
+
+[gate]
+# Score at or above this may interrupt immediately.
+interrupt_threshold = 7.5
+# Score at or above this is held for the digest instead of silenced.
+digest_threshold = 4.0
+# Hard cap on interruptions per day. Overflow is held for the digest.
+daily_interrupt_budget = 2
+# Quiet hours (local time): only near-maximum scores get through.
+quiet_start = 23
+quiet_end = 7
+quiet_interrupt_threshold = 9.0
+
+[ollama]
+url = "http://localhost:11434"
+model = "qwen2.5:3b"
+timeout = 20.0

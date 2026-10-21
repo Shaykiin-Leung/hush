@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+hush.toml
+hush_state.json
+reports/
+.venv/
