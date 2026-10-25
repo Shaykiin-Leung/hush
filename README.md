@@ -47,6 +47,17 @@ it *kept away*. From the bundled demo
 Every line carries its score, who judged it, and why — silence with an
 audit trail, not a black hole.
 
+## Demo
+
+```bash
+bash examples/demo.sh   # offline, <1s, deterministic output
+```
+
+10 candidates in → 2 interrupt, 4 digest, 4 silence (first run,
+`reports/hush-report-2026-10-21.md`); run it again and everything is
+a duplicate (second run, `reports/hush-report-2026-10-22.md`) — the
+gate remembers what it already decided.
+
 ## Quickstart
 
 Requires Python 3.11+. No third-party dependencies. For model judging,
